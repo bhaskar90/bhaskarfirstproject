@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.system.chatapp.login.LoginActivity">
+  <!--<include layout="@layout/toolbar"/>-->
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="start"
+      android:layout_marginTop="0dp"
+      android:layout_gravity="bottom"
+      android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/chat_green"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="center"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="0dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/material"
+        android:text="CHAT ROOM"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/material"
+        android:text="Please login to the chat room to continue chatting with your friends"/>
+   <!-- <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="25dp"
+          android:layout_marginRight="25dp"
+          android:textStyle="normal"
+          android:layout_marginBottom="5dp"
+          android:textColor="@color/red"
+          android:text="Email Id :"/>-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@color/material"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+      <EditText
+          android:id="@+id/vT_al_email"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="0dp"
+          android:paddingTop="10dp"
+          android:inputType="textEmailAddress"
+          android:text=""
+          android:background="@null"
+          android:hint="Email id" />
+
+    </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/material"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="1dp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_password"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/material"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+      <EditText
+          android:id="@+id/vT_al_pswd"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@null"
+          android:inputType="textPassword"
+          android:paddingTop="10dp"
+          android:layout_marginTop="0dp"
+          android:textColorHint="#1abc9c"
+          android:text=""
+          android:hint="Password" />
+
+    </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/material"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="1dp"/>
+     <!-- <EditText
+          android:id="@+id/vT_al_email"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:inputType="textEmailAddress"
+          android:textColor="@android:color/black"
+          android:paddingStart="15dp"
+          android:paddingEnd="0dp"
+          android:text="dhoni@gmail.com"
+          android:textColorHint="@color/gray"
+          android:background="@drawable/red_border"
+          android:hint="Enter email id"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="25dp"/>-->
+    <!--  <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="25dp"
+          android:layout_marginRight="25dp"
+          android:layout_marginTop="10dp"
+          android:textStyle="normal"
+          android:layout_marginBottom="5dp"
+          android:textColor="@color/red"
+          android:text="Password :"/>
+      <EditText
+          android:id="@+id/vT_al_pswd"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:paddingStart="15sp"
+          android:paddingEnd="0dp"
+          android:maxLines="1"
+          android:text="password"
+          android:inputType="textPassword"
+          android:textColorHint="@color/gray"
+          android:hint="Enter password"
+          android:textColor="@android:color/black"
+          android:background="@drawable/red_border"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="25dp"/>-->
+
+      <Button
+          android:id="@+id/vT_al_login"
+          android:text="Login"
+          android:gravity="center"
+          android:background="@color/material"
+          android:textSize="18sp"
+          android:layout_marginLeft="25dp"
+          android:layout_marginRight="25dp"
+          android:textColor="@color/white"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_marginBottom="40dp"
+          android:layout_marginTop="25dp"
+          android:layout_gravity="center" />
+
+
+  </LinearLayout>
+
+
+</LinearLayout>

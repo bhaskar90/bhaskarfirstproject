@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:gravity="start|center"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="0dp"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:text="Logout"/>
+    </LinearLayout>
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:gravity="start|center"
+        android:text="Are you sure want to Logout ?"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:id="@+id/vT_al_cancel"
+            android:textColor="@color/material"
+            android:gravity="center|end"
+            android:text="Cancel"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Ok"
+            android:textAllCaps="true"
+            android:id="@+id/vT_al_ok"
+            android:textSize="16sp"
+            android:textColor="@color/material"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

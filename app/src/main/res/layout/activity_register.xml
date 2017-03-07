@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <!-- <include layout="@layout/toolbar"/>-->
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/chat_green"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="center"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="0dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/material"
+        android:text="CHAT ROOM"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Registration for new user for chat room "
+        android:textColor="@color/material"/>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/plan_back"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/activity_login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.system.chatapp.login.LoginActivity">
+
+
+    <com.example.system.chatapp.utils.CircularImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/profiles"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/vI_ar_profilepic"
+        android:layout_marginTop="17dp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_usrnm"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="0dp"
+        android:textColorHint="@color/material"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/vE_ar_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@android:color/black"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter user name"
+            android:textColorHint="@color/gray"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="25dp"/>
+        </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/material"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="1dp"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_mobnum"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/material"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/vE_ar_mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@android:color/black"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:maxLength="10"
+            android:inputType="number"
+            android:hint="Enter mobile number"
+            android:textColorHint="@color/gray"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="25dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/material"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="1dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_emid"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/material"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <EditText
+        android:id="@+id/vE_ar_emailid"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@android:color/black"
+        android:paddingStart="5dp"
+        android:paddingEnd="0dp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter email id"
+        android:textColorHint="@color/gray"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="25dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/material"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="1dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/material"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <EditText
+        android:id="@+id/vE_ar_pswd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColorHint="@color/gray"
+        android:paddingStart="5sp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="25dp"/>
+</android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/material"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="1dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_cnmpassword"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/material"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <EditText
+        android:id="@+id/vE_ar_cmpswd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Enter confirm password"
+        android:textColorHint="@color/gray"
+        android:paddingStart="5sp"
+        android:paddingEnd="0dp"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="25dp"/>
+</android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/material"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="1dp"/>
+    <Button
+        android:id="@+id/vT_ar_signup"
+        android:text="SIGNUP"
+        android:gravity="center"
+        android:background="@color/material"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center" />
+</LinearLayout>
+</ScrollView>
+    </LinearLayout>

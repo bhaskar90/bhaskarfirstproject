@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:orientation="vertical"
+    android:background="@drawable/plan_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.system.chatapp.login.ProfileActivity">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:background="@color/material"
+            android:layout_weight="0.7">
+            <com.example.system.chatapp.utils.CircularImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/edit"
+                android:scaleType="fitXY"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:id="@+id/vI_afd_profilepic" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vT_afd_name"
+                android:gravity="start"
+                android:text="bhaskar"
+                android:layout_gravity="start|center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1.2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/phone_call"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/material"
+                    android:text="Mobile number"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vT_afd_mobile"
+                android:textSize="16sp"
+                android:layout_marginStart="60dp"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/dark_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/emailicon"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/material"
+                    android:text="Email Id"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="60dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:id="@+id/vT_afd_emailid"
+                android:text=""
+                android:textColor="@color/dark_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/at"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/material"
+                    android:text="Request Status"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textSize="16sp"
+                android:layout_marginStart="60dp"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:text="Send Request"
+                android:id="@+id/vT_afd_request"
+                android:textColor="@color/dark_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible"
+                android:id="@+id/vT_afd_sendrequest"
+                android:background="@color/material"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="Send Request"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

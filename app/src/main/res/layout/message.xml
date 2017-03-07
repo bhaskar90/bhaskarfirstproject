@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp"
+    android:visibility="gone"
+    android:id="@+id/vR_msg_receiver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="11sp"
+        android:textColor="@color/gray"
+        android:id="@+id/message_user"
+        android:textStyle="italic|bold" />
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/message_user"
+        android:textColor="@android:color/white"
+        android:id="@+id/message_time" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_user"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/message_text"
+        android:background="@drawable/outgoing_message_bg"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/vR_msg_sender"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="11sp"
+            android:textColor="@color/gray"
+            android:id="@+id/message_user1"
+            android:textStyle="italic|bold" />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/message_user"
+            android:textColor="@android:color/white"
+            android:id="@+id/message_time" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_user1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:id="@+id/message_text1"
+            android:background="@drawable/incoming_message_bg"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    </RelativeLayout>

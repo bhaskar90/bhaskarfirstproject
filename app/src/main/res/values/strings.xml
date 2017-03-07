@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chat Room</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pending">Pending</string>
+    <string name="accepted">Accepted</string>
+    <string name="please_check_internet">Please check internet</string>
+</resources>

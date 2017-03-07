@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/vL_ul_userlayout"
+    android:background="@android:color/white"
+    android:layout_height="80dp">
+    <com.example.system.chatapp.utils.CircularImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/vI_ul_userprofile"
+        android:src="@drawable/profiles"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vT_ul_name"
+        android:gravity="start|bottom"
+        android:paddingStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:paddingEnd="0dp"
+        android:text=" "
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vT_ul_mobile"
+        android:gravity="start|top"
+        android:paddingStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:paddingEnd="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+</LinearLayout>
